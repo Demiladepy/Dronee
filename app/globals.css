@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+body {
+  @apply bg-gray-100 text-gray-900;
+}
+.animated-bg {
+  background: linear-gradient(-45deg, #f3f4f6, #e0f2fe, #e0f7fa, #ede9fe);
+  background-size: 400% 400%;
+  animation: gradientShift 12s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-8px); }
+  40%, 80% { transform: translateX(8px); }
+}
+
+
+
